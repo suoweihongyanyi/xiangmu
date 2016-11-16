@@ -1,0 +1,87 @@
+@import url(m_resert.css);
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+header {
+  height: 40px;
+  background: #333333;
+}
+header h1 {
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+section {
+  -webkit-box-flex: 1;
+}
+section .banner {
+  height: 160px;
+  background: white;
+}
+section .banner img {
+  height: 160px;
+  width: 100%;
+}
+section .main_one {
+  height: 60px;
+  position: relative;
+}
+section .main_one input {
+  padding-left: 45px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 250px;
+  border: 2px #d9d9d9 solid;
+  color: #dadada;
+}
+section .main_one img {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+section .main_two {
+  height: 60px;
+  position: relative;
+}
+section .main_two input {
+  padding-left: 45px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 250px;
+  border: 2px #d9d9d9 solid;
+  color: #dadada;
+}
+section .main_two img {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+section .footer {
+  margin-top: 10px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+}
+section .footer input {
+  background: #46c68b;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+section .footer img {
+  position: absolute;
+  right: 14px;
+  top: -53px;
+}
