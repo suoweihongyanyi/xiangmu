@@ -1,0 +1,40 @@
+@import url(m_resert.css);
+.full(@w,@h,@back){
+    width: @w;
+    height: @h;
+    background: @back;
+}
+html,body,.warp{
+    .full(100%,100%,none);   
+}
+html{
+    font-size: 62.5%;
+}
+.box(@var){
+    display: -webkit-box;
+    -webkit-box-orient: @var;
+}
+.warp{
+    .full(100%,100%,none);
+    .box(vertical);
+    header{
+        line-height:4.3rem ;
+        text-align: center;
+        .full(100%,4.3rem,#333333);
+        color: white;
+        .box(horizontal);
+        .zuo{
+            .full(8.2rem,4.3rem,none);
+        }
+        .zhong{
+            -webkit-box-flex: 1;
+        }
+        .you{
+            .full(8.2rem,4.3rem,none);
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        
+    }
+}

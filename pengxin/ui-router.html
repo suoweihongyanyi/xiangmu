@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body ui-view ng-controller="mainController">
+</body>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-ui-router.js"></script>
+	<script type="text/javascript">
+		angular.module('mainApp', ['ui.router'])
+		.config(function($stateProvider,$urlRouterProvider) {
+
+			$urlRouterProvider.otherwise('index');
+
+			$stateProvider.state('index',{
+				url:'/index',
+				templateUrl:'template/index.html'
+			})
+			.state('index.firstPage',{
+				url:'/first',
+				templateUrl:'template/firstPage.html'
+			})
+			.state('index.secondPage',{
+				url:'/secPage',
+				templateUrl:'template/secondPage.html'
+			})
+			.state('index.secondPage.third',{
+				url:'/third',
+				templateUrl:'template/third.html'
+			})
+		})
+		.controller('mainController', ['$scope', function($scope){
+		}])
+	</script>
+</html>

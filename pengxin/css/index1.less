@@ -1,0 +1,75 @@
+@import url(m_resert.css);
+.full(@w,@h,@back){
+    width: @w;
+    height: @h;
+    background: @back;
+}
+html,body,.warp{
+    .full(100%,100%,none);   
+}
+html{
+    font-size: 62.5%;
+}
+.box(@var){
+    display: -webkit-box;
+    -webkit-box-orient: @var;
+}
+.warp{
+    .full(100%,100%,none);
+    .box(vertical);
+    header{
+        line-height:4.3rem ;
+        text-align: center;
+        .full(100%,4.3rem,#333333);
+        color: white;
+        .box(horizontal);
+        .zuo{
+            .full(8.2rem,4.3rem,none);
+        }
+        .zhong{
+            -webkit-box-flex: 1;
+        }
+        .you{
+            .full(8.2rem,4.3rem,none);
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        .box(vertical);
+        .banner img{
+            .full(100%,14.3rem,none);
+            display: block;
+            margin-bottom: 1.9rem;
+        }
+        .content{
+            margin:0 2%;
+            .full(96%,11.3rem,white);
+            text-align: center;
+            padding-top: 1.9rem;
+            .box(horizontal);
+            dl{
+                padding-top: 1.7rem;
+                border-radius: 0.5rem;
+                //box-shadow:0 -1rem 0 #CCCCCC; //左边阴影
+                border: 1px #C2C2C2 solid;
+                border-top: none;
+                -webkit-box-flex: 2;
+                dd{
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    footer{
+        .full(100%,4.7rem,#f5f5f5);
+        .box(horizontal);
+        dl{
+            text-align: center;
+            -webkit-box-flex: 1;
+            margin-top: 0.5rem;
+            dd{
+                margin-top: -0.2rem;
+            }
+        }
+    }
+}
